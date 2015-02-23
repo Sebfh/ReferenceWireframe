@@ -1,0 +1,55 @@
+.row {
+	div {
+		background-color: $background-color;
+		border: 1px solid $content-border-color;
+		color: darken($text-color, 10%);
+		text-align: center;
+		box-sizing:border-box;
+		  -moz-box-sizing:border-box;
+		  -webkit-box-sizing:border-box;
+
+
+
+		&.height-50 {
+			height: 50px;
+			line-height: 50px;
+		}
+
+		&.height-100 {
+			height: 100px;
+			line-height: 100px;
+		}
+
+		&.height-200 {
+			height: 200px;
+			line-height: 200px;
+		}
+
+		&.height-300 {
+			height: 300px;
+			line-height: 300px;
+		}
+
+		&.height-400 {
+			height: 400px;
+			line-height: 400px;
+		}
+
+		&.height-500 {
+			height: 500px;
+			line-height: 500px;
+		}
+		&:nth-child(1n+2) {
+			background-color: darken($background-color, 10%);
+		}
+		&:nth-child(1n+2) {
+			background-color: lighten($background-color, 5%);
+		}
+		&:nth-child(3n+3) {
+			background-color: lighten($background-color, 8%);
+		}
+		&:nth-child(4n+4) {
+			background-color: lighten($background-color, 12%);
+		}
+	}
+}
